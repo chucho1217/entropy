@@ -1,0 +1,29 @@
+package entropy;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.Path;
+
+import javax.xml.crypto.Data;
+
+public class Entropy_Main {
+	
+	///Users/carlosgarzon/Desktop/recitation/calgary/bib
+	
+	public static void main( String [] args )
+	{
+		try {
+			Path path = Paths.get("book1");
+			byte[] data = Files.readAllBytes(path);
+			
+			//System.out.println( data );
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+
+}
